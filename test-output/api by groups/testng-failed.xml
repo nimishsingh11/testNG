@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="none" name="Failed suite [api by groups]" guice-stage="DEVELOPMENT">
+  <test name="GRP-regression" verbose="2">
+    <groups>
+      <run>
+        <include name="regression"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="test.First"/>
+    </classes>
+  </test> <!-- GRP-regression -->
+</suite> <!-- Failed suite [api by groups] -->
