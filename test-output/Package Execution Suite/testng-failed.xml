@@ -4,11 +4,46 @@
   <test name="Package Execution">
     <packages>
       <package name="test"/>
+      <package name="intro"/>
     </packages>
     <classes>
       <class name="test.DependentTest"/>
       <class name="test.First"/>
       <class name="test.Token"/>
+      <class name="intro.A"/>
+      <class name="intro.DocTypeRules"/>
+      <class name="intro.Login"/>
     </classes>
   </test> <!-- Package Execution -->
+  <test name="Package Execution(failed)">
+    <classes>
+      <class name="intro.A">
+        <methods>
+          <include name="loginUser"/>
+        </methods>
+      </class> <!-- intro.A -->
+      <class name="intro.DocTypeRules">
+        <methods>
+          <include name="ruleList"/>
+        </methods>
+      </class> <!-- intro.DocTypeRules -->
+      <class name="test.First">
+        <methods>
+          <include name="afterTest"/>
+          <include name="beforeSuite"/>
+          <include name="beforeTest"/>
+          <include name="afterClass"/>
+          <include name="afterSuite"/>
+          <include name="afterMethod"/>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- test.First -->
+      <class name="test.DependentTest">
+        <methods>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- test.DependentTest -->
+    </classes>
+  </test> <!-- Package Execution(failed) -->
 </suite> <!-- Failed suite [Package Execution Suite] -->
