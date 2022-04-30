@@ -3,7 +3,6 @@
   <test name="Package Execution">
   <packages>
   	<package name="test"></package>
-  	<package name="intro"></package>
   </packages>
   </test>
 </suite>
