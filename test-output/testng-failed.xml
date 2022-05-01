@@ -1,49 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Package Execution Suite]" guice-stage="DEVELOPMENT">
-  <test name="Package Execution">
-    <packages>
-      <package name="test"/>
-      <package name="intro"/>
-    </packages>
+<suite parallel="none" name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test name="Default test" verbose="2">
     <classes>
-      <class name="test.DependentTest"/>
       <class name="test.First"/>
-      <class name="test.Token"/>
-      <class name="intro.A"/>
-      <class name="intro.DocTypeRules"/>
-      <class name="intro.Login"/>
     </classes>
-  </test> <!-- Package Execution -->
-  <test name="Package Execution(failed)">
-    <classes>
-      <class name="intro.A">
-        <methods>
-          <include name="loginUser"/>
-        </methods>
-      </class> <!-- intro.A -->
-      <class name="intro.DocTypeRules">
-        <methods>
-          <include name="ruleList"/>
-        </methods>
-      </class> <!-- intro.DocTypeRules -->
-      <class name="test.First">
-        <methods>
-          <include name="afterTest"/>
-          <include name="beforeSuite"/>
-          <include name="beforeTest"/>
-          <include name="afterClass"/>
-          <include name="afterSuite"/>
-          <include name="afterMethod"/>
-          <include name="beforeClass"/>
-          <include name="beforeMethod"/>
-        </methods>
-      </class> <!-- test.First -->
-      <class name="test.DependentTest">
-        <methods>
-          <include name="beforeMethod"/>
-        </methods>
-      </class> <!-- test.DependentTest -->
-    </classes>
-  </test> <!-- Package Execution(failed) -->
-</suite> <!-- Failed suite [Package Execution Suite] -->
+  </test> <!-- Default test -->
+</suite> <!-- Failed suite [Default suite] -->

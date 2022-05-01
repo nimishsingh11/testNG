@@ -18,7 +18,6 @@ public class Login {
 	public Object[][] createLoginTestData(){
 		return new Object[][] {
 			{"nimish.singh@digilytics.ai","Nimish1610"}
-			//{"nimish.singh@digilytics.ai",""},
 		};
 		}
 	

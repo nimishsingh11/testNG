@@ -58,14 +58,6 @@ public class First extends Token {
 	      System.out.println("in afterTest");
 	   }
 
-	   @BeforeSuite
-	   public void beforeSuite() {
-	      System.out.println("in beforeSuite");
-	   }
-
-	   @AfterSuite
-	   public void afterSuite() {
-	      System.out.println("in afterSuite");
-	   }
+	 
 
 }

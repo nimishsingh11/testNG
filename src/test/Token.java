@@ -1,13 +1,14 @@
 package test;
 
-import org.testng.annotations.BeforeMethod;
+
+import org.testng.annotations.BeforeSuite;
 
 public class Token {
 	String id;
-	 @BeforeMethod(groups= {"regression"})
-	   public void beforeMethod() {
+	 @BeforeSuite()
+	   public void beforeSuite() {
 		 id="Nimish";
-	      System.out.println("in beforeMethod");
+	      System.out.println("in beforesuite in token class");
 	   }
 
 }
